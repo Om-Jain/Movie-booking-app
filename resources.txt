@@ -1,0 +1,9 @@
+backend 
+
+
+Username for booking application database
+
+name: omjain
+password: omjain1
+
+mongodb+srv://omjain:omjain1@cluster1.cfbnwdm.mongodb.net/
