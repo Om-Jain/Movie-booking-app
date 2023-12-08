@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const BookingSchema = new mongoose.schema[{
+const BookingSchema = new mongoose.Schema({
     movie: {
         type: mongoose.Types.ObjectId,
         ref: "Movies",
@@ -18,8 +18,8 @@ const BookingSchema = new mongoose.schema[{
         ref: "user",
         required: true
     }
-}];
+});
 
 
 const Booking = mongoose.model('Booking', BookingSchema)
-module.exports = booking;
+module.exports = Booking;

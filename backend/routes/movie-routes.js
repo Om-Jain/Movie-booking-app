@@ -1,5 +1,6 @@
 const express = require('express');
 const movieRouter = express.Router();
+const {getAllUser} = require('../controllers/movie-controller');
 
 movieRouter.get('/',getAllMovie);
 movieRouter.post('/add',addMovie);
