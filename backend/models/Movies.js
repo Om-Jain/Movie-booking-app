@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const MovieSchema = new mongoose.schema[{
+
+const MovieSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true
@@ -16,7 +17,7 @@ const MovieSchema = new mongoose.schema[{
         type: Date,
         required: true
     },
-    postUrl: {
+    posterUrl: {
         type: String,
         required: true
     },
@@ -25,15 +26,14 @@ const MovieSchema = new mongoose.schema[{
     },
     bookings: [{
         type: mongoose.Types.ObjectId,
-        ref: "Booking"
+        ref:"Booking"
     }],
     admin: {
         type: mongoose.Types.ObjectId,
         ref: 'admin',
         required: true
-    }
-}];
+    }    
+})
 
-
-const movie = mongoose.model('Movies', MovieSchema)
+const movie =  mongoose.model('Movies', MovieSchema)
 module.exports = movie;

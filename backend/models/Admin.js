@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const AdminSchema = new mongoose.schema[{
+const AdminSchema = new mongoose.Schema({
     email: {
         type: 'string',
         required: true,
@@ -14,7 +14,7 @@ const AdminSchema = new mongoose.schema[{
         type: mongoose.Types.ObjectId,
         ref: 'Movies'
     }]
-}];
+});
 
 
 const admin = mongoose.model('admin', AdminSchema)

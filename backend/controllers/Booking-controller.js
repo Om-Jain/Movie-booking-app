@@ -78,4 +78,4 @@ const deleteBooking = async (req, res, next) => {
     return res.status(200).json({ message: "Booking deleted successfully" });
 }
   
-module.exports = {Booking, deleteBooking};  
+module.exports = {Booking, deleteBooking};   
